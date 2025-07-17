@@ -132,7 +132,7 @@ class Tank {
         // Health regeneration
         this.healthRegenTimer++;
         if (this.healthRegenTimer >= this.healthRegenCooldown && this.health < this.maxHealth) {
-            this.health = Math.min(this.maxHealth, this.health + 20); // Regenerate 20 health
+            this.health = Math.min(this.maxHealth, this.health + 4); // Regenerate 4 health
             this.healthRegenTimer = 0;
         }
         
